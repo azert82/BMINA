@@ -1,12 +1,15 @@
 package model;
 
+import java.awt.Point;
+
+import showboard.IPawn;
 /**
  * <h1>The Class Example.</h1>
  *
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class Example {
+public class Example extends Tile implements IPawn{
 
     /** The id. */
     private final int id;
@@ -64,4 +67,20 @@ public class Example {
     public String toString() {
         return this.getId() + " : " + this.getName();
     }
+    @Override
+	public int getX() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getY() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Point getPosition() {
+		// TODO Auto-generated method stub
+		return null;
 }
